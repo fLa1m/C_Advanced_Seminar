@@ -42,6 +42,14 @@ int calculate(char str[])
         {
             firstOperand -= secondOperand;
         }
+        if (str[i] == '*')
+        {
+            firstOperand *= secondOperand;
+        }
+        if (str[i] == '/')
+        {
+            firstOperand /= secondOperand;
+        }
     }
     return firstOperand;
 }
